@@ -1,0 +1,86 @@
+body {
+  background: #e5e5e5;
+}
+
+.toolbar {
+  display: flex;
+}
+
+.shape_1 {
+  position: absolute;
+  height: 74px;
+  width: 74px;
+  left: -2px;
+  top: 0;
+}
+
+.shape_2 {
+  position: absolute;
+  height: 74px;
+  width: 74px;
+  left: 33px;
+  top: 0;
+}
+
+.ic_menu {
+  position: absolute;
+  right: 14px;
+  top: 19px;
+}
+
+.content {
+  flex-direction: column;
+  display: flex;
+}
+
+.content h1 {
+  position: absolute;
+  width: 220px;
+  height: 100px;
+  left: 16px;
+  top: 104px;
+  font-family: Playfair Display, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+.content-1 {
+  position: absolute;
+  width: 288px;
+  height: 147px;
+  left: 16px;
+  top: 221px;
+  padding-top: 17px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+}
+
+.button-1 {
+  position: absolute;
+  background: white;
+  color: #1a2236;
+  top: 357px;
+  left: 16px;
+  width: 212px;
+  height: 51px;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.button-1:hover {
+  background: #1a2236;
+  color: white;
+}
+
+.button-1:visited {
+  background: #1a2236;
+  color: white;
+}
