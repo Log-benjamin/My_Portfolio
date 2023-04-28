@@ -1,31 +1,37 @@
 body {
-  background: #e5e5e5;
+  background: #fff;
 }
 
 .toolbar {
   display: flex;
 }
 
-.shape_1 {
+.logo-image1 {
   position: absolute;
-  height: 74px;
-  width: 74px;
-  left: -2px;
+  height: 4.625rem;
+  width: 4.625rem;
+  left: -0.125rem;
   top: 0;
+  background: url(Images/Geometry/Shape_1.svg);
+  background-blend-mode: normal, overlay, normal;
 }
 
-.shape_2 {
+.logo-image2 {
   position: absolute;
-  height: 74px;
-  width: 74px;
-  left: 33px;
+  height: 4.625rem;
+  width: 4.625rem;
+  left: 2.0625rem;
   top: 0;
+  background: url(Images/Geometry/Shape_2.svg);
+  background-blend-mode: normal, overlay, normal;
 }
 
-.ic_menu {
+.humberger {
   position: absolute;
-  right: 14px;
-  top: 19px;
+  width: 1.25rem;
+  height: 0.875rem;
+  left: 17.75rem;
+  top: 1.1875rem;
 }
 
 .content {
@@ -35,30 +41,30 @@ body {
 
 .content h1 {
   position: absolute;
-  width: 220px;
-  height: 100px;
-  left: 16px;
-  top: 104px;
+  width: 13.75rem;
+  height: 6.25rem;
+  left: 1rem;
+  top: 6.5rem;
   font-family: Playfair Display, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 100%;
   color: #1a2236;
 }
 
 .content-1 {
   position: absolute;
-  width: 288px;
-  height: 147px;
-  left: 16px;
-  top: 221px;
-  padding-top: 17px;
+  width: 18rem;
+  height: 9.1875rem;
+  left: 1rem;
+  top: 13.8125rem;
+  padding-top: 1.0625rem;
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
   letter-spacing: -0.01em;
   color: #1a2236;
 }
@@ -67,12 +73,12 @@ body {
   position: absolute;
   background: white;
   color: #1a2236;
-  top: 357px;
-  left: 16px;
-  width: 212px;
-  height: 51px;
+  top: 23.4375rem;
+  left: 1rem;
+  width: 17.25rem;
+  height: 3.1875rem;
   padding-top: 0;
-  margin-top: 0;
+  margin-top: 0.15rem;
 }
 
 .button-1:hover {
@@ -83,4 +89,39 @@ body {
 .button-1:visited {
   background: #1a2236;
   color: white;
+}
+
+.logo-image3 {
+  position: absolute;
+  width: 20rem;
+  height: 10rem;
+  top: 29.5rem;
+  background: url(Images/Geometry/image_geometry_2.svg);
+  background-blend-mode: normal, overlay, normal;
+}
+
+@media all and (min-width: 357px) {
+  .humberger {
+    width: 6.25rem;
+    left: 26.75rem;
+  }
+
+  .content h1 {
+    width: 32rem;
+  }
+
+  .content-1 {
+    width: 26rem;
+    top: 11rem;
+  }
+
+  .button-1 {
+    top: 20rem;
+    width: 25rem;
+  }
+
+  .logo-image3 {
+    width: 27rem;
+    top: 26rem;
+  }
 }
