@@ -128,6 +128,7 @@ I would like to thank my learning partners, standup team and code reviwers at mi
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT] licensed.
+
+This project is [MIT](https://github.com/Log-benjamin/My_Portfolio/blob/feature-1/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
