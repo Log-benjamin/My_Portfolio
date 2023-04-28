@@ -3,8 +3,6 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
@@ -16,44 +14,15 @@
   - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 A Portfolio Page using HTML and CSS
 
-This is a responsive html and css only page 
-
-## 🛠 Built With <a name="built-with"></a>
-
-### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
+This is a a personal portfolio responsive html and css only page. 
 
 <!-- Features -->
 
@@ -112,7 +81,7 @@ Example commands:
 
 ### Install
 
-Install this project with:
+Install this project wit    h:
 
 <!--
 Example command:
@@ -182,18 +151,8 @@ Example:
 > Describe 1 - 3 features you will add to the project.
 
 - I will add javascript file to make it more interactive
-- I will add a specific feature on the html like login page
-- I will use css Bootstrap framework to make the project responsive 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
+- I will add make it useable both on mobile and Desktop version
+- I will use css Bootstrap framework to make the project more responsive 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
