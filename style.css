@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+
+body {
+  background: #fff;
+  overflow-x: hidden;
+}
+
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* For mobile screen */
+@media screen and (min-width: 375px) {
+  .im {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    top: 0;
+    background-blend-mode: normal, overlay, normal;
+  }
+
+  .logo-image1 {
+    right: 246px;
+    left: -2px;
+    background: url(assets/Geometry/Shape_1.svg);
+  }
+
+  .logo-image2 {
+    right: 209px;
+    left: 33px;
+    background: url(assets/Geometry/Shape_2.svg);
+  }
+
+  .humberger {
+    position: absolute;
+    width: 4.25rem;
+    height: 1rem;
+    left: 21.5rem;
+    top: 1.1875rem;
+  }
+
+  .heading,
+  .name,
+  .bio {
+    position: absolute;
+  }
+
+  .heading {
+    width: 21.5625rem;
+    height: 21rem;
+    left: 1rem;
+    top: 6.5rem;
+  }
+
+  .name {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 100%;
+    padding-top: 0;
+    margin-top: 0;
+    color: #1a2236;
+  }
+
+  .bio {
+    position: absolute;
+    width: 345px;
+    height: 147px;
+    top: 117px;
+  }
+
+  .bio p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.05rem;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #1a2236;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .button-1 {
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 345px;
+    height: 50px;
+    top: 286px;
+    padding: 12px 42.32px 11.53px 42px;
+    color: #fff;
+    background: #1a2236;
+  }
+
+  .button-1:hover,
+  .button-1:visited {
+    background: white;
+    color: #1a2236;
+  }
+
+  .logo-image3 {
+    justify-content: flex-end;
+    display: inline-block;
+    position: relative;
+    width: 23.4375rem;
+    height: 160px;
+    left: 0;
+    top: 472px;
+    padding-right: 0;
+    margin-right: 0;
+    background-image: url(assets/Geometry/image_geometry_3.png);
+    background-repeat: no-repeat;
+  }
+}
+
+/* For Laptop and Desktop Screen
+@media screen and (min-width: 768){
+
+} */
