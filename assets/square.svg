@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102px" height="102px" viewBox="0 0 102 102" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<image id="image10" width="102" height="102" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABmCAYAAAA53+RiAAAABmJLR0QA/wD/AP+gvaeTAAABCklEQVR4nO3RMRHAIADAwFL/slCDBQZqoDsZ/hXkLuPsNR9y3tsB/DMmypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMiTImypgoY6KMifoAgmIEdJ5XbGMAAAAASUVORK5CYII="/>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<use xlink:href="#image10"/>
+  </g>
+</mask>
+<mask id="mask1">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="102" height="102" style="fill:rgb(0%,0%,0%);fill-opacity:0.501961;stroke:none;"/>
+  </g>
+</mask>
+<clipPath id="clip2">
+  <rect x="0" y="0" width="102" height="102"/>
+</clipPath>
+<g id="surface6" clip-path="url(#clip2)">
+<path style="fill:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:4;" d="M 4.625007 3.941172 L 106.846354 3.939241 L 106.844608 106.160622 L 4.623261 106.162553 Z M 4.625007 3.941172 " transform="matrix(1.062454,0.0099174,-0.0099174,1.062454,0.0392929,-0.0456807)"/>
+<path style="fill:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:4;" d="M 55.733149 4.419971 L 128.014556 4.418616 L 128.015912 76.700023 L 55.73188 76.698803 Z M 55.733149 4.419971 " transform="matrix(0.744256,0.758281,-0.758281,0.744256,21.086711,-40.855652)"/>
+</g>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="102" height="102"/>
+</clipPath>
+<g id="surface9" clip-path="url(#clip1)">
+<use xlink:href="#surface6" mask="url(#mask1)"/>
+</g>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface9" mask="url(#mask0)"/>
+</g>
+</svg>
