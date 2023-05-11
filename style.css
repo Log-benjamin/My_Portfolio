@@ -8,549 +8,920 @@ body {
   overflow-x: hidden;
 }
 
-@media screen and (min-width: 375px) {
-  /* styling for toolbar starts here. */
-  .toolbar ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+/* styling for toolbar starts here. */
+.desk-nav {
+  display: none;
+}
 
-  .logo-image {
-    height: 4.625em;
-  }
+.toolbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
+.logo-image {
+  height: 4.625em;
+}
+
+.humberger {
+  margin-right: 4.375%;
+  width: 1.25em;
+  height: 0.875em;
+}
+
+/* styling for toolbar ends here. */
+
+/* styling for home section starts here. */
+.desk-img2 {
+  display: none;
+}
+
+.home {
+  margin-top: 1.875rem;
+  width: 90%;
+  height: 105%;
+  margin-left: 5%;
+  margin-bottom: 2rem;
+}
+
+.home h1,
+.bio,
+.button-1 {
+  font-style: normal;
+}
+
+.home h1 {
+  margin: 0;
+  margin-right: 0;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.0625rem;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+.bio {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.03125rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+  margin-bottom: 1.375rem;
+}
+
+.bu {
+  box-sizing: border-box;
+  width: 100%;
+  height: 3.6875rem;
+  color: #fff;
+  margin: 0;
+  background: #1a2236;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.image-1 {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  left: 0;
+  margin-bottom: 2.49375rem;
+}
+
+/* styling for home section ends here. */
+
+/* styling for project section starts here. */
+.desk-img3,
+.desk-img4,
+.desk-img8,
+.desk-img9,
+.desk-img10,
+.desk-img11 {
+  display: none;
+}
+
+.projects {
+  margin: 0 0 2rem 5%;
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+}
+
+.pr-d {
+  display: flex;
+  flex-direction: column;
+}
+
+.pr-d-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a2236;
+  margin: -0.125rem;
+}
+
+.pr-d-1 h3 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+  margin-left: 5%;
+  line-height: 80%;
+  color: #fff;
+}
+
+.pr-d-1 ul {
+  margin-left: 5%;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style-type: none;
+}
+
+.pr-d-1 li {
+  display: inline-block;
+  margin-right: 3%;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.HTCS {
+  width: 5.5625rem;
+}
+
+.RoR {
+  width: 6.6875rem;
+}
+
+.JS {
+  width: 5.875rem;
+}
+
+.HTCS,
+.RoR,
+.JS {
+  border: none;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  height: 1.4375rem;
+  background: #98dede;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8125rem;
+  line-height: 80%;
+  color: #1a2236;
+}
+
+.seeProject {
+  display: flex;
+  align-items: center;
+  padding-left: 0.625rem;
+  margin-top: 1.125rem;
+  margin-left: 5%;
+  margin-bottom: 1.25rem;
+  width: 13.5rem;
+  height: 3.25rem;
+  background-color: #1a2236;
+  border: 1px solid #fff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.229rem;
+  line-height: 1rem;
+  color: #fff;
+}
+
+.arr {
+  margin-left: 1rem;
+}
+
+/* styling for project section ends here. */
+
+/* styling for About section starts here. */
+.desk-img5 {
+  display: none;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 18.0625rem 18.0625rem 18.0625rem;
+  margin-left: 5%;
+  margin-top: 3.5rem;
+}
+
+.about-bio {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-bio h2 {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 100%;
+  color: #1a2236;
+  margin: 0;
+}
+
+.about-bio p {
+  width: 95.625%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  color: #1a2236;
+  margin-top: 1.25rem;
+}
+
+.get-cv {
+  box-sizing: border-box;
+  display: flex;
+  width: 95.625%;
+  height: 3.425rem;
+  background: #1a2236;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #fff;
+  justify-content: center;
+  padding-top: 0.8125rem;
+  margin-bottom: 1.6875rem;
+}
+
+.dow {
+  margin-top: 0.7rem;
+  margin-left: 1rem;
+}
+
+.language-skill-1,
+.language-skill-2,
+.language-skill-3 {
+  margin-right: 4.375%;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.language-skill-1 {
+  background: #1c528a;
+}
+
+.language-skill-2 {
+  background: #e2505c;
+}
+
+.language-skill-3 {
+  background: #febf52;
+}
+
+.codeh2 {
+  padding-left: 3.125rem;
+  margin-top: 3.125rem;
+  margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: #fff;
+}
+
+.codeFrameSkill-list {
+  position: absolute;
+  margin-left: 1.5rem;
+  margin-top: 1.3125rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  letter-spacing: -0.0525em;
+  color: #fff;
+}
+
+.symbo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* styling for About section ends here. */
+
+/* styling for contact section starts here. */
+.desk-img6,
+.desk-img7 {
+  display: none;
+}
+
+.contact {
+  margin-top: 0.6875rem;
+  width: 100%;
+  background: #f9f9fa;
+}
+
+.getstart {
+  margin: 2rem 0 0 5.625%;
+}
+
+.getstart h2 {
+  margin: 0;
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+.getstart p {
+  margin-top: 1.25rem 0 0.875rem 0;
+  width: 95.625%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.02rem;
+  line-height: 1.4375rem;
+  color: #1a2236;
+}
+
+.get-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  margin-left: 5.625%;
+}
+
+.get-info-ne {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.77rem;
+  line-height: 1.0825rem;
+  color: #7d7c84;
+  margin-bottom: 0.25rem;
+}
+
+.in-namemail {
+  box-sizing: border-box;
+  width: 100%;
+  height: 3.25rem;
+  background: #fff;
+  border: 1px solid #dfdfe0;
+  border-radius: 0.25rem;
+}
+
+.meesa {
+  box-sizing: border-box;
+  width: 100%;
+  height: 7rem;
+  background: #fff;
+  border: 1px solid #dfdfe0;
+  border-radius: 0.25rem;
+  margin-bottom: 1.25rem;
+  padding-top: 0.875rem;
+  padding-left: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  color: #7d7c84;
+}
+
+.in-namemail::placeholder {
+  padding-left: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  color: #1a2236;
+}
+
+.in-namemail:hover,
+.meesa:hover {
+  border: 2px solid #5aa3ff;
+}
+
+.upp {
+  margin-left: 0.9375rem;
+}
+
+.button-2 {
+  margin-bottom: 1.9375rem;
+}
+
+/* styling for contact section starts here. */
+
+/* styling for footer section starts here. */
+.foot {
+  width: 100%;
+  height: 10rem;
+  background: #1a2236;
+}
+
+.button-4 {
+  max-width: 90%;
+  margin-left: 5.625%;
+  margin-top: 1.75rem;
+  margin-bottom: 1.7rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #92dcdc;
+  border: none;
+  background: #1a2236;
+}
+
+.social-connect {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-bottom: 2.25rem;
+  background: #1a2236;
+}
+
+/* styling for footer section ends here. */
+.bu:hover,
+.bu:visited,
+.get-cv:hover,
+.get-cv:visited,
+.seeProject:hover,
+.seeProject:visited {
+  background: white;
+  color: #1a2236;
+}
+
+@media screen and (min-width: 768px) {
+  /* styling for toolbar section starts here */
+  .logo-image,
   .humberger {
-    margin-right: 4.375%;
-    width: 1.25em;
-    height: 0.875em;
+    display: none;
   }
 
-  /* styling for toolbar ends here. */
+  .desk-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .desk-nav li {
+    margin-top: 2.375rem;
+    margin-bottom: 2.375rem;
+    margin-right: 3.472%;
+  }
+
+  .desk-nav a {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3vw;
+    line-height: 1.5rem;
+    color: #1a2236;
+    text-decoration: none;
+  }
+
+  .desk-nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #5aa3ff;
+    text-decoration-thickness: 0.1875rem;
+  }
+
+  /* styling for toolbar section ends here */
 
   /* styling for home section starts here. */
   .home {
-    margin-top: 1.875rem;
-    width: 90%;
-    height: 105%;
-    margin-left: 5%;
-    margin-bottom: 2rem;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 51.25% 48.75%;
+    grid-template-rows: auto;
+    margin: 0;
   }
 
-  .home h1,
-  .bio,
-  .button-1 {
-    font-style: normal;
+  .home-item1 {
+    order: 1;
+  }
+
+  .home-item2 {
+    order: 2;
   }
 
   .home h1 {
-    margin: 0;
-    margin-right: 0;
-    width: 100%;
-    height: auto;
-    margin-bottom: 1.0625rem;
-    font-family: 'Playfair Display', sans-serif;
-    font-weight: 400;
-    font-size: 3.125rem;
+    max-width: 88.9%;
+    padding: 0;
+    margin: 13.3% 0 0 11.1%;
+    font-size: 9vw;
     line-height: 100%;
-    color: #1a2236;
   }
 
-  .bio {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 1.03125rem;
-    line-height: 1.5rem;
-    letter-spacing: -0.01em;
-    color: #1a2236;
-    margin-bottom: 1.375rem;
+  .home p {
+    margin: 3.2% 0 0 11.1%;
+    max-width: 75%;
+    font-size: 1.2vw;
   }
 
   .bu {
-    box-sizing: border-box;
-    width: 100%;
-    height: 3.6875rem;
-    color: #fff;
-    margin: 0;
-    background: #1a2236;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    text-align: center;
+    margin: 3.6% 0 0 11.1%;
+    width: 25vw;
   }
 
-  .image-1 {
-    display: inline-block;
+  .desk-img2 {
+    display: flex;
+    height: 13vw;
+    justify-content: flex-end;
+    margin-top: 1.1806%;
+  }
+
+  .desk-img1 {
+    display: flex;
     width: 100%;
-    height: auto;
-    left: 0;
-    margin-bottom: 2.49375rem;
+    background: url("assets/desktop-image1.svg");
+    background-size: contain;
   }
 
   /* styling for home section ends here. */
 
+  .image-1 {
+    display: none;
+  }
+
   /* styling for project section starts here. */
-  .projects {
-    margin: 0 0 2rem 5%;
-    font-family: 'Playfair Display', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 3.125rem;
-    line-height: 100%;
-    color: #1a2236;
-  }
-
   .projects-container {
+    margin-top: 13.125rem;
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
+    grid-template-columns: 15% 10% 15% 22% 23% 15%;
+    grid-template-rows: auto auto auto auto auto auto;
   }
 
-  .pr-d {
-    display: flex;
-    flex-direction: column;
+  .projects {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    transform: rotate(-90deg);
+    width: 12.5rem;
+    height: 4.375rem;
+    margin: 8rem 0 0 0;
+    padding: 0;
+    font-size: 4.5rem;
   }
 
-  .pr-d-1 {
-    display: flex;
-    flex-direction: column;
-    background-color: #1a2236;
+  .desk-img3 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    display: inline;
+    width: 100%;
+    margin-top: 0.3125rem;
   }
 
-  .pr-d-1 h3 {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1.6rem;
-    margin-top: 1.25rem;
-    margin-bottom: 1rem;
-    margin-left: 5%;
-    line-height: 80%;
-    color: #fff;
+  .pr-d1 {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    margin-left: 0.7rem;
+    background: url(assets/PR-image1.svg);
+    background-size: cover;
   }
 
-  .pr-d-1 ul {
-    margin-left: 5%;
-    padding-left: 0;
+  .pr-d1 .pr1-img {
+    display: none;
+  }
+
+  .pr-d1 .pr-d-1 {
+    margin-top: 21%;
+  }
+
+  .pr-d1 .pr-d-1 h3 {
+    font-size: 4.2vw;
+    margin-top: 6%;
     margin-bottom: 0;
-    margin-top: 0;
-    list-style-type: none;
   }
 
-  .pr-d-1 li {
-    display: inline-block;
-    margin-right: 3%;
-    padding-top: 0.375rem;
-    padding-bottom: 0.375rem;
+  .pr-d1 .pr-d-1 ul {
+    padding: 0;
+    margin-top: 3%;
   }
 
-  .HTCS {
-    width: 5.5625rem;
+  .pr-d1 .HTCS {
+    width: 10vw;
+    height: 2.3vw;
+    font-size: 1.3vw;
   }
 
-  .RoR {
-    width: 6.6875rem;
+  .pr-d1 .RoR {
+    width: 13vw;
+    height: 2.3vw;
+    font-size: 1.3vw;
   }
 
-  .JS {
-    width: 5.875rem;
+  .pr-d1 .JS {
+    width: 11vw;
+    height: 2.3vw;
+    font-size: 1.3vw;
   }
 
-  .HTCS,
-  .RoR,
-  .JS {
-    border: none;
-    padding-top: 0.375rem;
-    padding-bottom: 0.375rem;
-    height: 1.4375rem;
-    background: #98dede;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 0.8125rem;
-    line-height: 80%;
+  .pr-d1 .seeProject {
+    margin-top: 5%;
+    width: 18vw;
+    height: 4vw;
+    font-size: 1.5vw;
+    color: #1a2236;
+    background-color: #fff;
+  }
+
+  .pr-d1 .arr {
+    margin-left: 2.5vw;
     color: #1a2236;
   }
 
-  .seeProject {
-    display: flex;
-    align-items: center;
-    padding-left: 0.625rem;
-    margin-top: 1.125rem;
-    margin-left: 5%;
-    margin-bottom: 1.25rem;
-    width: 13.5rem;
-    height: 3.25rem;
-    background-color: #1a2236;
-    border: 1px solid #fff;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.229rem;
-    line-height: 1rem;
-    color: #fff;
+  .pr-d2 {
+    grid-row-start: 2;
+    grid-column: 1 / 3;
+    padding-top: 43%;
   }
 
-  .arr {
-    margin-left: 1rem;
+  .pr-d2 .pr-d-1 {
+    display: none;
+  }
+
+  .desk-img4 {
+    display: inline;
+    grid-row-start: 2;
+    grid-column: 3 / 5;
+  }
+
+  .pr-d6 {
+    grid-row-start: 2;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .pr-d6 .pr1-img {
+    margin-top: 2px;
+    width: 100%;
+  }
+
+  .pr-d6 .pr-d-1 {
+    margin-top: -45%;
+    margin-bottom: 0;
+  }
+
+  .pr-d6 .pr-d-1 h3 {
+    margin-bottom: 0;
+    line-height: 120%;
+    font-size: 2.5vw;
+    margin-top: 1%;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* keeps the text in a single line */
+    overflow: hidden; /* keeps the element from overflowing its parent */
+  }
+
+  .pr-d6 .pr-d1 ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .pr-d6 .HTCS {
+    width: 7vw;
+    height: 2.3vw;
+    font-size: 1vw;
+  }
+
+  .pr-d6 .RoR {
+    width: 9vw;
+    height: 2.3vw;
+    font-size: 1vw;
+  }
+
+  .pr-d6 .JS {
+    width: 8vw;
+    height: 2.3vw;
+    font-size: 1vw;
+  }
+
+  .pr-d6 .seeProject {
+    margin-top: 2%;
+    margin-bottom: 4%;
+    width: 18vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    color: #1a2236;
+    background-color: #fff;
+  }
+
+  .pr-d6 .arr {
+    margin-left: 2.5vw;
+    color: #1a2236;
+  }
+
+  .pr-d3 .pr-d-1,
+  .pr-d5 .pr-d-1 {
+    display: none;
+  }
+
+  .pr-d3 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-end: 4;
+    width: 123%;
+    margin-top: -30%;
+  }
+
+  .pr-d5 {
+    position: relative;
+    grid-row-start: 3;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    margin-top: -52%;
+    margin-left: -0.5%;
+  }
+
+  .desk-img8 {
+    display: inline;
+    grid-row-start: 3;
+    grid-column-start: 4;
+    margin-left: 42%;
+    padding-top: 35%;
+    align-self: self-end;
+  }
+
+  .desk-img9 {
+    display: inline;
+    grid-row-start: 3;
+    grid-column-start: 6;
+    margin-top: 15%;
+  }
+
+  .desk-img10 {
+    display: inline;
+    grid-row-start: 4;
+    grid-column-start: 1;
+    margin-top: -24%;
+  }
+
+  .desk-img11 {
+    display: inline;
+    grid-row-start: 4;
+    grid-column-start: 4;
+    margin-top: -17%;
+    margin-left: 18%;
+  }
+
+  .pr-d4 {
+    width: 70%;
+    grid-row-start: 4;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    margin-left: -34%;
+    margin-top: -10%;
+  }
+
+  .pr-d4 .pr-d-1 {
+    display: none;
   }
 
   /* styling for project section ends here. */
 
   /* styling for About section starts here. */
   .about-container {
+    margin-top: 13.125rem;
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto 18.0625rem 18.0625rem 18.0625rem;
-    margin-left: 5%;
-    margin-top: 3.5rem;
+    grid-template-columns: 32% 32% 36%;
+    grid-template-rows: auto auto auto;
   }
 
   .about-bio {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about-bio h2 {
-    font-family: 'Playfair Display', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 3.125rem;
-    line-height: 100%;
-    color: #1a2236;
-    margin: 0;
-  }
-
-  .about-bio p {
-    width: 95.625%;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 1.3125rem;
-    color: #1a2236;
-    margin-top: 1.25rem;
-  }
-
-  .get-cv {
-    box-sizing: border-box;
-    display: flex;
-    width: 95.625%;
-    height: 3.425rem;
-    background: #1a2236;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-    color: #fff;
-    justify-content: center;
-    padding-top: 0.8125rem;
-    margin-bottom: 1.6875rem;
-  }
-
-  .dow {
-    margin-top: 0.7rem;
-    margin-left: 1rem;
+    grid-row-start: 1;
+    grid-column-start: 3;
+    margin-left: 10%;
   }
 
   .language-skill-1,
   .language-skill-2,
   .language-skill-3 {
-    margin-right: 4.375%;
-    margin-bottom: 1rem;
-  }
-
-  .language-skill-1 {
-    background: #1c528a;
-  }
-
-  .language-skill-2 {
-    background: #e2505c;
-  }
-
-  .language-skill-3 {
-    background: #febf52;
-  }
-
-  .codeh2 {
-    padding-left: 3.125rem;
-    margin-top: 3.125rem;
+    margin-right: 0;
     margin-bottom: 0;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.25rem;
-    line-height: 2rem;
-    color: #fff;
   }
 
-  .codeFrameSkill-list {
-    position: absolute;
-    margin-left: 1.5rem;
-    margin-top: 1.3125rem;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.125rem;
-    line-height: 1.6875rem;
-    letter-spacing: -0.0525em;
-    color: #fff;
-  }
-
-  .symbo {
+  .desk-img5 {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 5.5rem;
-    align-items: end;
+    justify-self: end;
+    margin-top: 8%;
   }
 
-  /* styling for About section ends here. */
+  .get-cv {
+    width: 60%;
+    font-size: 1rem;
+  }
+
+  /* styling for About section starts here. */
 
   /* styling for contact section starts here. */
   .contact {
-    margin-top: 0.6875rem;
-    width: 100%;
-    background: #f9f9fa;
+    margin-top: 10rem;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto auto auto;
   }
 
-  .getstart {
-    margin: 2rem 0 0 5.625%;
+  .contact .pr-d1 .pr-d-1 ul {
+    width: 100%;
+  }
+
+  .desk-img6 {
+    display: inline;
+    justify-self: start;
+    align-self: self-start;
+    width: 100%;
+  }
+
+  .desk-img7 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    display: inline;
+    position: relative;
+    top: -6rem;
+    justify-self: end;
+    align-self: self-end;
+    width: 100%;
+  }
+
+  .contact-form {
+    margin-top: 2rem;
+    grid-row-start: 1;
+    grid-column-start: 2;
   }
 
   .getstart h2 {
-    margin: 0;
-    font-family: 'Playfair Display', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 3.125rem;
-    line-height: 100%;
-    color: #1a2236;
+    font-size: 9vw;
   }
 
   .getstart p {
-    margin-top: 1.25rem 0 0.875rem 0;
-    width: 95.625%;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.02rem;
-    line-height: 1.4375rem;
-    color: #1a2236;
+    font-size: 0.75rem;
   }
 
-  .get-info {
-    display: flex;
-    flex-direction: column;
-    max-width: 90%;
-    margin-left: 5.625%;
+  .get-info .button-2 {
+    align-self: center;
   }
 
-  .get-info-ne {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.77rem;
-    line-height: 1.0825rem;
-    color: #7d7c84;
-    margin-bottom: 0.25rem;
-  }
+  /* styling for contact section ends here. */
 
-  .in-namemail {
-    box-sizing: border-box;
-    width: 100%;
-    height: 3.25rem;
-    background: #fff;
-    border: 1px solid #dfdfe0;
-    border-radius: 0.25rem;
-  }
-
-  .meesa {
-    box-sizing: border-box;
-    width: 100%;
-    height: 7rem;
-    background: #fff;
-    border: 1px solid #dfdfe0;
-    border-radius: 0.25rem;
-    margin-bottom: 1.25rem;
-    padding-top: 0.875rem;
-    padding-left: 1rem;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 1.3125rem;
-    color: #7d7c84;
-  }
-
-  .in-namemail::placeholder {
-    padding-left: 1rem;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 1.3125rem;
-    color: #1a2236;
-  }
-
-  .in-namemail:hover,
-  .meesa:hover {
-    border: 2px solid #5aa3ff;
-  }
-
-  .upp {
-    margin-left: 0.9375rem;
-  }
-
-  .button-2 {
-    margin-bottom: 1.9375rem;
-  }
-
-  /* styling for contact section starts here. */
-
-  /* styling for footer section starts here. */
+  /* styling for the footer section starts here. */
   .foot {
-    width: 100%;
-    height: 10rem;
-    background: #1a2236;
+    margin-top: -6rem;
+    height: 8rem;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 3rem 3rem;
   }
 
-  .button-4 {
-    max-width: 90%;
-    margin-left: 5.625%;
-    margin-top: 1.75rem;
-    margin-bottom: 1.7rem;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    color: #92dcdc;
-    border: none;
-    background: #1a2236;
+  .foot .button-4 {
+    width: 80%;
+    margin-top: 2rem;
+    margin-left: 0;
   }
 
   .social-connect {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0;
-    padding-left: 3%;
-    padding-right: 3%;
-    margin-bottom: 2.25rem;
-    background: #1a2236;
+    margin-left: 40%;
+    margin-top: 3rem;
+    margin-right: 0%;
   }
 
-  /* styling for footer section ends here. */
-  .bu:hover,
-  .bu:visited,
-  .get-cv:hover,
-  .get-cv:visited,
+  /* styling for the footer section ends here. */
+
   .seeProject:hover,
   .seeProject:visited {
-    background: white;
-    color: #1a2236;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .home h1 {
-    font-size: 4.65rem;
-  }
-
-  .bio {
-    font-size: 1.5345rem;
-  }
-
-  .button-1 {
-    font-size: 1.5rem;
-  }
-
-  .projects {
-    font-size: 4.65rem;
-  }
-
-  .pr-d-1 h3 {
-    font-size: 2.3808rem;
-  }
-
-  .HTCS {
-    width: 8.277rem;
-  }
-
-  .RoR {
-    width: 9.951rem;
-  }
-
-  .JS {
-    width: 8.742rem;
-  }
-
-  .HTCS,
-  .RoR,
-  .JS {
-    height: 2.139rem;
-    font-size: 1.209rem;
-    padding: 0.558rem 0 0.558rem 0;
-  }
-
-  .seeProject {
-    margin-top: 1.674rem;
-    margin-bottom: 1.674rem;
-    width: 25rem;
-    height: 4.836rem;
-    border: 2px solid #fff;
-    font-size: 2.5rem;
-    line-height: 2.2rem;
-  }
-
-  .about-container {
-    grid-template-rows: auto 26.877rem 26.877rem 26.877rem;
-    margin-top: 5.208rem;
-  }
-
-  .about-bio h2 {
-    font-size: 4.65rem;
-  }
-
-  .about-bio p {
-    font-size: 1.302rem;
-    line-height: 1.953rem;
-  }
-
-  .get-cv {
-    height: 5.0964rem;
-    font-size: 2.25rem;
-    line-height: 2.232rem;
-    padding-top: 1.209rem;
-    margin-bottom: 2.511rem;
-  }
-
-  .get-cv img {
-    display: none;
-  }
-
-  .language-skill-1,
-  .language-skill-2,
-  .language-skill-3 {
-    margin-right: 4.375%;
-    margin-bottom: 1.488rem;
-  }
-
-  .codeh2 {
-    font-size: 1.86rem;
-    line-height: 2.976rem;
-  }
-
-  .codeFrameSkill-list {
-    font-size: 1.674rem;
-    line-height: 2.511rem;
-    letter-spacing: -0.0525em;
-  }
-
-  .symbo {
-    margin-top: 12.8rem;
+    background: #1a2236;
+    color: white;
   }
 }

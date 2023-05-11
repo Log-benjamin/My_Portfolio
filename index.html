@@ -15,6 +15,12 @@
             <ul>
                 <li class="logo-image"><img  src="assets/logo-image1.svg"></li>
                 <li class="humberger"><img src="assets/ic_menu.svg"></li>
+                <div class="desk-nav">
+                    <li><a href="#">Hello</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </div>
             </ul>
         </nav>
     </header>
@@ -23,6 +29,7 @@
     <main>
      <!-- home section starts here.  -->
      <section class="home">
+        <div class="home-item1">
             <h1>Binyam Tegene</h1> 
             
             <p class="bio">
@@ -32,16 +39,21 @@
              If you like what you see and have a project you need coded, don’t hesitate to contact me. 
             </p>
              
-            <button class="button-1 bu" type="button">Start Collabortation</button> 
+            <button class="button-1 bu" type="button">Start Collabortation</button>
+            <div class="desk-img2"><img src="assets/desktop-image2.svg"></div> 
+        </div>
+
+        <div class="home-item2 desk-img1"></div>
      </section>
      <!-- home section ends here.  -->
 
      <img class="image-1" src="assets/logo-image2.svg">
-     <h2 class="projects">Projects</h2>
 
      <!-- projects section starts here. -->
      <section class="projects-container">
-        <article class="pr-d">
+        <h2 class="projects">Projects</h2>
+        <img class="desk-img3" src="assets/desktop-image3.svg">
+        <article class="pr-d pr-d1">
             <img class="pr1-img" src="assets/PR-image1.svg">
             <div class="pr-d-1">
                 <h3>Project name goes here</h3>
@@ -52,9 +64,9 @@
                 </ul>
                 <button type="button" class="seeProject">See this Project <i class="arr fa-sharp fa-solid fa-arrow-right fa-lg"></i></button> 
             </div>
-        </article>              
+        </article>
         
-        <article class="pr-d">
+        <article class="pr-d pr-d2">
             <img class="pr1-img" src="assets/PR-image2.svg">
             <div class="pr-d-1">
                 <h3>Project name goes here</h3>
@@ -67,7 +79,9 @@
             </div>
         </article>
 
-        <article class="pr-d">
+        <svg class="desk-img4" viewBox="0 0 512 512"><image href="assets/desktop-image4.svg"></image></svg>
+
+         <article class="pr-d pr-d3">
             <img class="pr1-img" src="assets/PR-image3.svg">
             <div class="pr-d-1">
                 <h3>Project name goes here</h3>
@@ -79,8 +93,13 @@
                 <button type="button" class="seeProject">See this Project <i class="arr fa-sharp fa-solid fa-arrow-right fa-lg"></i></button> 
             </div>
         </article>
-             
-        <article class="pr-d">
+
+        <svg class="desk-img8" viewBox="0 0 250 250"><image href="assets/desktop-image8.svg"></image></svg>
+        <svg class="desk-img9" viewBox="0 0 300 300"><image href="assets/desktop-image9.svg"></image></svg>
+        <svg class="desk-img10" viewBox="0 0 300 300"><image href="assets/desktop-image10.svg"></image></svg>
+        <svg class="desk-img11" viewBox="0 0 300 300"><image href="assets/desktop-image11.svg"></image></svg>
+       
+        <article class="pr-d pr-d4">
             <img class="pr1-img" src="assets/PR-image4.svg">
             <div class="pr-d-1">
                 <h3>Project name goes here</h3>
@@ -93,7 +112,7 @@
             </div>
         </article>
                
-        <article class="pr-d">
+        <article class="pr-d pr-d5">
             <img class="pr1-img" src="assets/PR-image5.svg">
             <div class="pr-d-1">
                 <h3>Project name goes here</h3>
@@ -106,7 +125,7 @@
             </div>
         </article>
                 
-        <article class="pr-d">
+        <article class="pr-d pr-d6">
             <img class="pr1-img" src="assets/PR-image6.svg">
             <div class="pr-d-1">
                 <h3>Project name goes here</h3>
@@ -156,13 +175,15 @@
         <div class="language-skill-3">
             <h4 class="codeh2">Languages</h4>
             <ul class="codeFrameSkill-list">
-                <li>JavaScript(ES5/ES6)</li>
-                <li>Ruby</li>
-                <li>HTML</li>
-                <li>CSS</li>
+                <li>Database Managment</li>
+                <li>CLI</li>
+                <li>API Design</li>
+                <li>Version Control</li>
+                <li>Web Development</li>
             </ul>
             <div class="symbo"><img src="assets/light.svg"></div>
         </div>
+        <img class="desk-img5" src="assets/desktop-image5.svg">
      </section>
      <!-- About section ends here. -->
      
@@ -171,25 +192,31 @@
         <header class="toolbar">
                 <ul>
                     <li class="logo-image"><img  src="assets/logo-image1.svg"></li>
+                    <svg class="desk-img6" viewBox="0 0 350 350"><image href="assets/desktop-image6.svg"></image></svg>
                 </ul>
         </header>
-
-        <article class="getstart">
-            <h2>Get Started</h2>
-
-            <p> I'm always interested in hearing about new projects, 
-                so if you'd like to chat please get in touch. </p>
-        </article>
-            
-        <form class="get-info" action="https://formspree.io/f/mrgvjwwq" method="post">
-            <label class="get-info-ne" for="name">Your name</label>
-            <input type="text" class="in-namemail" name="name" maxlength="30" placeholder="Anastasiia" required>
-            <label class="get-info-ne" for="name">Your email</label>
-            <input type="email" class="in-namemail" name="email" placeholder="anastasiia@gm..." required> 
-            <label class="get-info-ne" for="name">Your message</label>
-            <textarea class="meesa" name="message" cols="30" rows="10" maxlength="500" placeholder="Enter your message here..."></textarea>
-            <button class="button-2 bu" type="submit">Start Collabortation</button>
-        </form>     
+        <div class="contact-form">
+            <article class="getstart">
+                <h2>Get Started</h2>
+    
+                <p> I'm always interested in hearing about new projects, 
+                    so if you'd like to chat please get in touch. </p>
+            </article>
+                
+            <form class="get-info" action="https://formspree.io/f/mrgvjwwq" method="post">
+                <label class="get-info-ne" for="name">Your name</label>
+                <input type="text" class="in-namemail" name="name" maxlength="30" placeholder="Anastasiia" required>
+                <label class="get-info-ne" for="name">Your email</label>
+                <input type="email" class="in-namemail" name="email" placeholder="anastasiia@gm..." required> 
+                <label class="get-info-ne" for="name">Your message</label>
+                <textarea class="meesa" name="message" cols="30" rows="10" maxlength="500" placeholder="Enter your message here..."></textarea>
+                <button class="button-2 bu" type="submit">Start Collabortation</button>
+            </form>  
+        </div>
+  
+        <svg class="desk-img7" viewBox="0 0 350 350"><image href="assets/desktop-image7.svg"></image></svg>
+                
+   
      </section>
      <!-- contact section ends here.  -->
     </main>
