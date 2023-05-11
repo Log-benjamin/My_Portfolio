@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h2><b>My Portfolio Project: mobile first Setup</b></h3>
+  <h2><b>My Portfolio Project: Mobile and Desktop Version</b></h3>
 </div>
 # 📗 Table of Contents
 
@@ -38,6 +38,7 @@ This is a a personal portfolio responsive mobile first using html and css.
 - **CSS.**
 - **Linters.**
 - **Flexbox.**
+- **Grid.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
