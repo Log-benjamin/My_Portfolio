@@ -32,6 +32,13 @@ body {
   height: 0.875em;
 }
 
+.logo-image:hover,
+.humberger:hover {
+  margin-top: 3%;
+  margin-left: 3%;
+  transform: scale(1.5);
+}
+
 /* styling for toolbar ends here. */
 
 /* styling for home section starts here. */
@@ -64,6 +71,10 @@ body {
   font-size: 3.125rem;
   line-height: 100%;
   color: #1a2236;
+}
+
+.home h1:hover {
+  transform: translate(2ch, 2mm);
 }
 
 .bio {
@@ -117,6 +128,10 @@ body {
   font-size: 3.125rem;
   line-height: 100%;
   color: #1a2236;
+}
+
+.projects:hover {
+  transform: translate(2ch, 2mm);
 }
 
 .projects-container {
@@ -357,6 +372,10 @@ body {
   color: #1a2236;
 }
 
+.getstart h2:hover {
+  transform: translate(2ch, 2mm);
+}
+
 .getstart p {
   margin-top: 1.25rem 0 0.875rem 0;
   width: 95.625%;
@@ -469,6 +488,10 @@ body {
   background: #1a2236;
 }
 
+.social-connect li:hover {
+  transform: rotate(20deg);
+}
+
 /* styling for footer section ends here. */
 .bu:hover,
 .bu:visited,
@@ -478,6 +501,10 @@ body {
 .seeProject:visited {
   background: white;
   color: #1a2236;
+}
+
+.about-bio h2:hover {
+  transform: translate(2ch, 2mm);
 }
 
 @media screen and (min-width: 768px) {
