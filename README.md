@@ -6,8 +6,17 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
+    - [🛠 Built With](#built-with)
+      - [Tech Stack](#tech-stack)
+      - [Key Features](#key-features)
+    - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+      - [Setup](#setup)
+      - [Install](#install)
+      - [Usage](#usage)
+      - [Run tests](#run-tests)
+      - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [⭐️ Show your support](#support)
@@ -42,6 +51,12 @@ This is a a personal portfolio responsive mobile first using html and css.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://log-benjamin.github.io/My_Portfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## :computer: Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
@@ -55,7 +70,7 @@ In order to run this project you need:
 ### Setup
 Clone this repository to your desired folder or download the Zip folder:
 ```sh
-    "git clone https://github.com/zuhebahmed88091/Portfolio_site.git"
+    "git clone https://github.com/Log-benjamin/My_Portfolio.git"
 ```
 - Navigate to the location of the folder in your machine:
 
@@ -130,6 +145,6 @@ I would like to thank my learning partners, standup team and code reviwers at mi
 ## 📝 License <a name="license"></a>
 
 
-This project is [MIT](https://github.com/Log-benjamin/My_Portfolio/blob/feature-1/LICENSE) licensed.
+This project is [MIT](https://github.com/Log-benjamin/My_Portfolio/blob/main/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
