@@ -53,7 +53,8 @@ This is a a personal portfolio responsive mobile first using html and css.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://log-benjamin.github.io/My_Portfolio/)
+- [My Portfolio](https://log-benjamin.github.io/My_Portfolio/)
+- [Presentation Video](https://www.loom.com/share/a26a88a1cf8549a8abd676727dda1fbb)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
