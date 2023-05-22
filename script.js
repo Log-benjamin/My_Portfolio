@@ -7,3 +7,9 @@ topMenu.addEventListener('click', () => {
   topMenu.classList.toggle('active');
   menuList.classList.toggle('active');
 });
+
+function closeMobileMenu() {
+  topLogo.classList.remove("active");
+  topMenu.classList.remove("active");
+  menuList.classList.remove("active");
+}

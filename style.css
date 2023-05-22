@@ -12,7 +12,6 @@ body {
 .desk-nav {
   display: none;
 }
-
 .toolbar ul {
   display: flex;
   align-items: center;
@@ -568,7 +567,7 @@ body {
   .desk-nav .menu-image-z {
     display: none;
   }
-
+  
   .desk-nav {
     display: flex;
     flex-direction: row;
