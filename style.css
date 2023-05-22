@@ -26,17 +26,69 @@ body {
   height: 4.625em;
 }
 
+.logo-image img {
+  content: url("assets/logo-image1.svg");
+}
+
+.logo-image img.active {
+  content: url("assets/logo-image1-1.svg");
+}
+
 .humberger {
   margin-right: 4.375%;
   width: 1.25em;
   height: 0.875em;
 }
 
-.logo-image:hover,
-.humberger:hover {
-  margin-top: 3%;
-  margin-left: 3%;
-  transform: scale(1.5);
+.humberger img {
+  content: url("assets/ic_menu.svg");
+}
+
+.humberger img.active {
+  content: url("assets/ic_menu-1.svg");
+}
+
+.desk-nav.active {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.desk-nav li {
+  padding: 3%;
+  list-style: none;
+}
+
+.desk-nav .firs-img {
+  align-self: flex-end;
+  margin-right: 15%;
+}
+
+.desk-nav .menu-image-z {
+  display: inline-block;
+  width: 100%;
+}
+
+.desk-nav .second-img {
+  align-self: flex-start;
+  margin-left: 15%;
+}
+
+.desk-nav a {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.3vw;
+  line-height: 1.5rem;
+  color: #1a2236;
+  text-decoration: none;
+}
+
+.desk-nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: #5aa3ff;
+  text-decoration-thickness: 0.1875rem;
 }
 
 /* styling for toolbar ends here. */
@@ -377,7 +429,7 @@ body {
 }
 
 .getstart p {
-  margin-top: 1.25rem 0 0.875rem 0;
+  margin: 1.25rem 0 0.875rem 0;
   width: 95.625%;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -510,27 +562,40 @@ body {
 @media screen and (min-width: 768px) {
   /* styling for toolbar section starts here */
   .logo-image,
-  .humberger {
+  .humberger,
+  .desk-nav .firs-img,
+  .desk-nav .second-img,
+  .desk-nav .menu-image-z {
     display: none;
   }
 
   .desk-nav {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     width: 100%;
   }
 
+  .desk-nav.active {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
+
   .desk-nav li {
+    padding: 0;
     margin-top: 2.375rem;
     margin-bottom: 2.375rem;
     margin-right: 3.472%;
+    list-style: none;
   }
 
   .desk-nav a {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.3vw;
+    font-size: 1.6vw;
     line-height: 1.5rem;
     color: #1a2236;
     text-decoration: none;
