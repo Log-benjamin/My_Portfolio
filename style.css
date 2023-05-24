@@ -350,7 +350,6 @@ body {
 .language-skill-3 {
   margin-right: 4.375%;
   margin-bottom: 1rem;
-  position: relative;
 }
 
 .language-skill-1 {
@@ -388,12 +387,6 @@ body {
   line-height: 1.6875rem;
   letter-spacing: -0.0525em;
   color: #fff;
-}
-
-.symbo {
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }
 
 /* styling for About section ends here. */
@@ -540,6 +533,12 @@ body {
   background: #1a2236;
 }
 
+.Popup-window li {
+  display: inline-block;
+  margin-right: 3%;
+  border: 0.516669px solid #1a2236;
+}
+
 .social-connect li:hover {
   transform: rotate(20deg);
 }
@@ -553,11 +552,155 @@ body {
 .seeProject:visited {
   background: white;
   color: #1a2236;
+  cursor: pointer;
 }
 
 .about-bio h2:hover {
   transform: translate(2ch, 2mm);
 }
+
+/* styling for the pop up window  */
+.Popup-window {
+  display: none;
+  opacity: 0.97;
+}
+
+#overlay {
+  display: none;
+}
+
+.innerPopup {
+  z-index: 10;
+  position: fixed;
+  margin-top: 1rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 95%;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  background: white;
+  border: 1px solid black;
+  border-radius: 16px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.Popup-window .one {
+  overflow-y: scroll;
+}
+
+.Popup-window .close-btn {
+  display: flex;
+  justify-content: end;
+  margin-top: 1rem;
+  margin-right: 3%;
+}
+
+.Popup-window h3 {
+  font-size: 2rem;
+  margin-left: 3%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80%;
+  color: #1a2236;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.Popup-window ul {
+  padding: 0;
+  list-style-type: none;
+  margin-left: 3%;
+  margin-top: 0;
+}
+
+.Popup-window .HTCS,
+.Popup-window .RoR,
+.Popup-window .JS {
+  background: #fff;
+}
+
+.Popup-window .pr1-img {
+  width: 94%;
+  margin-left: 3%;
+}
+
+.Popup-window article {
+  width: 94%;
+  margin-left: 3%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 2rem;
+  color: #1a2236;
+}
+
+.sub-form {
+  display: flex;
+  width: 100%;
+
+  /* justify-content: space-between; */
+}
+
+.Popup-window .button-4 {
+  max-width: 70%;
+  margin-left: 10%;
+  margin-top: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 3rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #1a2236;
+  background: white;
+  border: 0.516669px solid #1a2236;
+}
+
+.Popup-window .fa-arrow-up-right-from-square {
+  padding-left: 15%;
+  margin-left: 15%;
+}
+
+.Popup-window .fa-github {
+  padding-left: 10%;
+  margin-left: 10%;
+}
+
+.Popup-window .HTCS:hover,
+.Popup-window .RoR:hover,
+.Popup-window .JS:hover,
+.Popup-window .HTCS:visited,
+.Popup-window .RoR:visited,
+.Popup-window .JS:visited,
+.Popup-window .button-4:hover,
+.Popup-window .button-4:visited {
+  background: #1a2236;
+  color: white;
+  cursor: pointer;
+}
+
+.Popup-window.activ {
+  display: block;
+  transition: all 300ms ease-in-out;
+}
+
+/* styling for the popup-window  */
 
 @media screen and (min-width: 768px) {
   /* styling for toolbar section starts here */
@@ -1015,5 +1158,11 @@ body {
   .seeProject:visited {
     background: #1a2236;
     color: white;
+    cursor: pointer;
+  }
+
+  .innerPopup {
+    background: white;
+    border: 30px solid black;
   }
 }
