@@ -560,11 +560,8 @@ body {
 }
 
 /* styling for the pop up window  */
-.Popup-window {
-  display: none;
-  opacity: 0.97;
-}
 
+.Popup-window,
 #overlay {
   display: none;
 }
@@ -584,9 +581,8 @@ body {
   align-self: center;
   align-content: center;
   background: white;
-  border: 1px solid black;
-  border-radius: 16px;
   overflow-y: scroll;
+  overflow-x: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
@@ -602,13 +598,14 @@ body {
 .Popup-window .close-btn {
   display: flex;
   justify-content: end;
-  margin-top: 1rem;
-  margin-right: 3%;
+  margin-top: 2rem;
+  margin-right: 7%;
+  cursor: pointer;
 }
 
 .Popup-window h3 {
   font-size: 2rem;
-  margin-left: 3%;
+  margin-left: 7%;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -621,7 +618,7 @@ body {
 .Popup-window ul {
   padding: 0;
   list-style-type: none;
-  margin-left: 3%;
+  margin-left: 7%;
   margin-top: 0;
 }
 
@@ -633,16 +630,26 @@ body {
 
 /* Slideshow container */
 .slideshow-container {
-  margin-left: 3%;
+  margin-left: 7%;
   display: flex;
-  margin-right: 3%;
+  margin-right: 7%;
   align-items: center;
+  position: relative;
 }
 
 /* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
+  position: absolute;
+  left: 10px;
+  color: #fff;
+}
+
+.next {
+  display: flex;
+  justify-content: flex-end;
+  right: 10px;
 }
 
 .Popup-window .pr1-img {
@@ -651,30 +658,30 @@ body {
 
 .popContainer {
   width: 94%;
-  margin-left: 3%;
-  margin-top: 0;
+  margin-left: 7%;
   display: flex;
+  border: none;
 }
 
 .Popup-window .popCon-item1 {
-  width: 25%;
+  width: 22.9%;
 }
 
 .Popup-window .popCon-item2 {
-  width: 25%;
+  width: 22.9%;
 }
 
 .Popup-window .popCon-item3 {
-  width: 25%;
+  width: 22.9%;
 }
 
 .Popup-window .popCon-item4 {
-  width: 25%;
+  width: 22.9%;
 }
 
 .Popup-window article {
-  width: 94%;
-  margin-left: 3%;
+  width: 87%;
+  margin-left: 7%;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1217,10 +1224,11 @@ body {
   .ds-li-bt {
     background-color: #fff;
     border: none;
+    margin-top: 3rem;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     line-height: 2rem;
     color: #1a2236;
     cursor: pointer;
