@@ -16,6 +16,7 @@ window.onscroll = () => {
 
 const projectDetails = [
   {
+    idd: 0,
     seeProjectBtn: 0,
     Pname: 'Survey form',
     description1: 'A website survey is used to collect information about websites, users, or the website itself. Get website visitors to fill in your online survey. Collect valuable data about your website. If you need to start from scratch, make your own survey now! Whether you’re developing a new website or redesigning an old one, use this free Website Survey template to collect the opinions of different target audiences.',
@@ -27,6 +28,7 @@ const projectDetails = [
     sourceLink: 'https://forum.freecodecamp.org/t/survey-form-build-a-survey-form/550578',
   },
   {
+    idd: 1,
     seeProjectBtn: 1,
     Pname: 'Netflix Home Page Clone',
     description1: 'Netflix Clone, we all use netflix in our day to day life. And if you are just starting with web development. This project can be a good practice project for you. This netflix clone is a dynamic site and has everything you need for fullstack development practice.',
@@ -38,6 +40,7 @@ const projectDetails = [
     sourceLink: 'https://codepen.io/albenis-k-rqeli/pen/eYNGzvJ',
   },
   {
+    idd: 3,
     seeProjectBtn: 2,
     Pname: 'Search engine result page',
     description1: 'The page that a search engine returns after a user submits a search query. In addition to organic search results, search engine results pages (SERPs) usually include paid search and pay-per-click (PPC) ads. Thanks to search engine optimization (SEO), ranking position on a SERP can be highly competitive since users are more likely to click on results at the top of the page. With the launch of schema markup, SERPs are becoming much more complex to try to anticipate user needs.',
@@ -49,6 +52,7 @@ const projectDetails = [
     sourceLink: 'https://publicwww.com/',
   },
   {
+    idd: 3,
     seeProjectBtn: 3,
     Pname: 'Tribute page',
     description1: 'a sample project from freecode camp that is built using html and css to build static website. A tribute page is a web page where we mention our favorite person and write down their achievements. For example, here, we will create a tribute page for the cricketer Virat Kohli.',
@@ -60,6 +64,7 @@ const projectDetails = [
     sourceLink: 'https://forum.freecodecamp.org/t/tribute-page-build-a-tribute-page/556433',
   },
   {
+    idd: 4,
     seeProjectBtn: 4,
     Pname: 'Temperature Converter Website',
     description1: 'The user will input a temperature in either Fahrenheit or Celsius and press a "convert" button. The converted temperature will then be displayed with the correct unit.',
@@ -71,6 +76,7 @@ const projectDetails = [
     sourceLink: 'https://javascript.plainenglish.io/building-a-temperature-converter-app-using-html-css-and-javascript-52097d9d3e98',
   },
   {
+    idd: 5,
     seeProjectBtn: 5,
     Pname: 'Basic Portfolio Website',
     description1: 'a personal portfolio responsive mobile first website using html css and javascript. A portfolio website is a unique way to showcase your work and let others know about yourself. It’s like an evergreen platform for your projects, case studies, and information about you. In addition, it’s one of the best ways to express your personality, experience, and capabilities.',
@@ -120,39 +126,58 @@ const overlay = document.querySelector('#overlay');
 function createModal(Pname, technologies, image, description1, description2, liveLink, sourceLink) {
   const sampleTemplateModal = `
 
-             <div class="innerPopup">
-               <div class="one">
-                    <div class="close-btn" ><i class="fa-solid fa-x fa-la"></i></div>
-                    <h3>${Pname}</h3>
+  <div class="innerPopup">
+  <div class="one">
+       <div class="close-btn" ><i class="fa-solid fa-x fa-la"></i></div>
+       <h3>${Pname}</h3>
 
-                    <ul>
-                        <li><button type="button" class="HTCS">${technologies[0]}</button></li>
-                        <li><button type="button" class="RoR">${technologies[1]}</button></li>
-                        <li><button type="button" class="JS">${technologies[2]}</button></li>
-                    </ul>
+       <ul>
+           <li><button type="button" class="HTCS">${technologies[0]}</button></li>
+           <li><button type="button" class="RoR">${technologies[1]}</button></li>
+           <li><button type="button" class="JS">${technologies[2]}</button></li>
+       </ul>
 
-                    <img class="pr1-img" src="${image}">
-                    <article>
-                        <p>
-                            ${description1}
-                            <br>
-                            <br>
-                            ${description2}
-                        </p>
-                    </article>
-                    <form>
-                        <button class="button-4 bu" type="submit" formaction="${liveLink}">See live<i class="upp fa-solid fa-arrow-up-right-from-square"></i></button>
-                        <button class="button-4 bu" type="submit" formaction="${sourceLink}">See source<i class="upp fa-brands fa-github"></i></button>
-                    </form>
+       <div class="slideshow-container">
+           <a class="prev"><i class="fa-solid fa-angle-left fa-xl" style="color: #9da2aa;"></i></a>
+           <img class="pr1-img" src="${image}">
+           <a class="next"><i class="fa-solid fa-angle-right fa-xl" style="color: #9da2aa;"></i></a>
+       </div>
+       
+       
+       <div class="popContainer"> 
+           <img class="popCon-item1" src="${image}">
+           <img class="popCon-item2" src="${image}">
+           <img class="popCon-item3" src="${image}">
+           <img class="popCon-item4" src="${image}">
+       </div>
 
-                </div>
+       <article>
+           <p>
+               ${description1}
+               <br>
+               <br>
+               ${description2}
+           </p>
+       </article>
+       <form>
+           <button class="button-4 bu" type="submit" formaction="${liveLink}">See live<i class="upp fa-solid fa-arrow-up-right-from-square"></i></button>
+           <button class="button-4 bu" type="submit" formaction="${sourceLink}">See source<i class="upp fa-brands fa-github"></i></button>
+       </form>
 
-              </div>
+       <div class="desk-slide-btn"> 
+             <button class="ds-li-bt d-l-b-1 slide"><i class="fa-solid fa-arrow-left"></i> Previous Project</button>
+             <button class="ds-li-bt d-l-b-2 slide">Next Project <i class="fa-solid fa-arrow-right"></i></button>
+       </div>                            
+       
 
+   </div>
+
+ </div>
   `;
   return sampleTemplateModal;
 }
 /* -----------------------popup window-------------------------*/
+
 function openModal(modal) {
   if (modal == null) return;
   modal.classList.add('activ');
@@ -178,6 +203,7 @@ openPopButtons.forEach((button) => {
     addElement.after(element);
     openModal(element);
     const closePopButtons = document.querySelectorAll('.close-btn');
+
     closePopButtons.forEach((button) => {
       button.addEventListener('click', () => {
         const modal = button.closest('.Popup-window');
@@ -186,3 +212,7 @@ openPopButtons.forEach((button) => {
     });
   });
 });
+
+/* -----------------------slide window-------------------------*/
+
+/* -----------------------slide window-------------------------*/
