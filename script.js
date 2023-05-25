@@ -128,7 +128,7 @@ function createModal(Pname, technologies, image, description1, description2, liv
 
   <div class="innerPopup">
   <div class="one">
-       <div class="close-btn" ><i class="fa-solid fa-x fa-la"></i></div>
+       <div class="close-btn" ><i class="fa-solid fa-x fa-xl"></i></div>
        <h3>${Pname}</h3>
 
        <ul>
@@ -138,9 +138,9 @@ function createModal(Pname, technologies, image, description1, description2, liv
        </ul>
 
        <div class="slideshow-container">
-           <a class="prev"><i class="fa-solid fa-angle-left fa-xl" style="color: #9da2aa;"></i></a>
+           <a class="prev"><i class="fa-solid fa-angle-left fa-2xl"></i></a>
            <img class="pr1-img" src="${image}">
-           <a class="next"><i class="fa-solid fa-angle-right fa-xl" style="color: #9da2aa;"></i></a>
+           <a class="next"><i class="fa-solid fa-angle-right fa-2xl"></i></a>
        </div>
        
        
