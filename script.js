@@ -221,14 +221,15 @@ openPopButtons.forEach((button) => {
 const form = document.querySelector('.get-info');
 const email = document.querySelector('#email');
 const errMsg = document.querySelector('.err-msg');
-const msgText = 'Write the email in lowercase, please';
+const msgText = 'Please write your email in lowercase!';
 
 form.addEventListener('submit', (e) => {
   if (email.value !== email.value.toLowerCase()) {
     errMsg.textContent = msgText;
-    errMsg.style.color = 'red';
+    errMsg.classList.add('errmsggadd');
     e.preventDefault();
   } else {
-    errMsg.style.display = 'none';
+    errMsg.classList.add('errmsggrmv');
   }
 });
+
