@@ -234,27 +234,22 @@ form.addEventListener('submit', (e) => {
 });
 
 /* -----------------------preserve data---------------------------*/
-const userName = document.querySelector('#form-inputname');
-const msg = document.querySelector('#form -inputmessage');
+const yourName = document.querySelector('#form-inputname');
+const msg = document.querySelector('#form-inputmessage');
 
-function getFormData() {
+form.addEventListener('submit', () => {
   const formData = {
-    userName: userName.value,
+    yourName: yourName.value,
     email: email.value,
     msg: msg.value,
   };
-  return formData;
-}
-
-form.addEventListener('submit', () => {
-  const formData = getFormData();
   localStorage.setItem('formData', JSON.stringify(formData));
 });
 
 window.addEventListener('load', () => {
   const data = JSON.parse(localStorage.getItem('formData'));
   if (data) {
-    userName.value = data.userName;
+    yourName.value = data.yourName;
     email.value = data.email;
     msg.value = data.msg;
   }
