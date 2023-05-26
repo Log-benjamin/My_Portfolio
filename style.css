@@ -747,14 +747,16 @@ body {
 
 /* styling for the popup-window  */
 
- /* styling for validation starts */
+/* styling for validation starts */
 .errmsggadd {
   color: #e2505c;
 }
+
 .errmsggrmv {
   display: none;
 }
- /* styling for validation starts */
+
+/* styling for validation starts */
 
 @media screen and (min-width: 768px) {
   /* styling for toolbar section starts here */
