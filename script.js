@@ -232,3 +232,30 @@ form.addEventListener('submit', (e) => {
     errMsg.classList.add('errmsggrmv');
   }
 });
+
+/* -----------------------preserve data---------------------------*/
+const userName = document.querySelector('#form-inputname');
+const msg = document.querySelector('#form -inputmessage');
+
+function getFormData() {
+  const formData = {
+    userName: userName.value,
+    email: email.value,
+    msg: msg.value,
+  };
+  return formData;
+}
+
+form.addEventListener('submit', () => {
+  const formData = getFormData();
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+window.addEventListener('load', () => {
+  const data = JSON.parse(localStorage.getItem('formData'));
+  if (data) {
+    userName.value = data.userName;
+    email.value = data.email;
+    msg.value = data.msg;
+  }
+});
