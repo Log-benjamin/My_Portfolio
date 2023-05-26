@@ -216,3 +216,19 @@ openPopButtons.forEach((button) => {
 /* -----------------------slide window-------------------------*/
 
 /* -----------------------slide window-------------------------*/
+
+/* -----------------------validate contact form---------------------------*/
+const form = document.querySelector('.get-info');
+const email = document.querySelector('#email');
+const errMsg = document.querySelector('.err-msg');
+const msgText = 'Write the email in lowercase, please';
+
+form.addEventListener('submit', (e) => {
+  if (email.value !== email.value.toLowerCase()) {
+    errMsg.textContent = msgText;
+    errMsg.style.color = 'red';
+    e.preventDefault();
+  } else {
+    errMsg.style.display = 'none';
+  }
+});
