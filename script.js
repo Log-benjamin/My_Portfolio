@@ -232,4 +232,3 @@ form.addEventListener('submit', (e) => {
     errMsg.classList.add('errmsggrmv');
   }
 });
-
