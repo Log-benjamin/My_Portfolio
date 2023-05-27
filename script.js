@@ -13,7 +13,7 @@ window.onscroll = () => {
   topMenu.classList.remove('active');
   menuList.classList.remove('active');
 };
-
+/* -----------------------Create Project Section-------------------------*/
 const projectDetails = [
   {
     idd: 0,
@@ -117,6 +117,7 @@ function createProjects() {
 }
 
 createProjects();
+/* -----------------------Create Project Section-------------------------*/
 
 /* -----------------------popup window-------------------------*/
 
@@ -176,7 +177,6 @@ function createModal(Pname, technologies, image, description1, description2, liv
   `;
   return sampleTemplateModal;
 }
-/* -----------------------popup window-------------------------*/
 
 function openModal(modal) {
   if (modal == null) return;
@@ -212,10 +212,8 @@ openPopButtons.forEach((button) => {
     });
   });
 });
+/* -----------------------popup window-------------------------*/
 
-/* -----------------------slide window-------------------------*/
-
-/* -----------------------slide window-------------------------*/
 
 /* -----------------------validate contact form---------------------------*/
 const form = document.querySelector('.get-info');
@@ -232,3 +230,4 @@ form.addEventListener('submit', (e) => {
     errMsg.classList.add('errmsggrmv');
   }
 });
+/* -----------------------validate contact form---------------------------*/
