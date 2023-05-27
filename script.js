@@ -1,6 +1,15 @@
 const topLogo = document.querySelector('.logo-image img');
 const topMenu = document.querySelector('.humberger img');
 const menuList = document.querySelector('.desk-nav');
+const Name = document.querySelector('#name');
+const Message = document.getElementById('meesa');
+const projectContainer = document.getElementById('portfolio');
+const openPopButtons = document.querySelectorAll('.seeProject');
+const overlay = document.querySelector('#overlay');
+const form = document.querySelector('.get-info');
+const email = document.getElementById('email');
+const errMsg = document.querySelector('.err-msg');
+const msgText = 'Please write your email in lowercase!';
 
 topMenu.addEventListener('click', () => {
   topLogo.classList.toggle('active');
@@ -89,7 +98,6 @@ const projectDetails = [
   },
 ];
 function createProjects() {
-  const projectContainer = document.getElementById('portfolio');
   projectDetails.forEach((project) => {
     const articleTemplate = `
           <article class="pr-d ${project.articleClass}">
@@ -120,9 +128,6 @@ createProjects();
 /* -----------------------Create Project Section-------------------------*/
 
 /* -----------------------popup window-------------------------*/
-
-const openPopButtons = document.querySelectorAll('.seeProject');
-const overlay = document.querySelector('#overlay');
 
 function createModal(Pname, technologies, image, description1, description2, liveLink, sourceLink) {
   const sampleTemplateModal = `
@@ -215,10 +220,6 @@ openPopButtons.forEach((button) => {
 /* -----------------------popup window-------------------------*/
 
 /* -----------------------validate contact form---------------------------*/
-const form = document.querySelector('.get-info');
-const email = document.querySelector('#email');
-const errMsg = document.querySelector('.err-msg');
-const msgText = 'Please write your email in lowercase!';
 
 form.addEventListener('submit', (e) => {
   if (email.value !== email.value.toLowerCase()) {
@@ -230,3 +231,28 @@ form.addEventListener('submit', (e) => {
   }
 });
 /* -----------------------validate contact form---------------------------*/
+
+/* -----------------------Preserve Data in Local Storage---------------------------*/
+function getFormData() {
+  const formData = {
+    Name: Name.value,
+    email: email.value,
+    Message: Message.value,
+  };
+  return formData;
+}
+
+form.addEventListener('submit', () => {
+  const formData = getFormData();
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+window.addEventListener('load', () => {
+  const data = JSON.parse(localStorage.getItem('formData'));
+  if (data) {
+    Name.value = data.Name;
+    email.value = data.email;
+    Message.value = data.Message;
+  }
+});
+/* -----------------------Preserve Data in Local Storage---------------------------*/
