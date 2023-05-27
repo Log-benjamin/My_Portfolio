@@ -214,7 +214,6 @@ openPopButtons.forEach((button) => {
 });
 /* -----------------------popup window-------------------------*/
 
-
 /* -----------------------validate contact form---------------------------*/
 const form = document.querySelector('.get-info');
 const email = document.querySelector('#email');

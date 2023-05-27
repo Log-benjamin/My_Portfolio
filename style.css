@@ -448,12 +448,11 @@ body {
   color: #7d7c84;
   margin-bottom: 0.25rem;
 }
-.get-info input:required:valid {
-    border: 1px solid green;
-}
+
 .get-info input:required:valid {
   border: 1px solid green;
-} 
+}
+
 .in-namemail {
   padding-left: 1rem;
   box-sizing: border-box;
@@ -483,7 +482,6 @@ body {
 }
 
 .in-namemail::placeholder {
-
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
