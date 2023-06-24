@@ -906,21 +906,27 @@ body {
     grid-column-start: 3;
     grid-column-end: 7;
     margin-left: 0.7rem;
-    background: url(assets/PR-image1.svg);
+
+    /* width: 50%; */
+    height: auto;
+
+    /* background: url(assets/Todo_List_App_img1-desk.jpg); */
     background-size: cover;
   }
 
+  /*
   .pr-d1 .pr1-img {
     display: none;
-  }
+  } */
 
   .pr-d1 .pr-d-1 {
-    margin-top: 21%;
+    /* margin-top: 21%; */
   }
 
   .pr-d1 .pr-d-1 h3 {
     font-size: 4.2vw;
-    margin-top: 6%;
+
+    /* margin-top: 6%; */
     margin-bottom: 0;
   }
 
