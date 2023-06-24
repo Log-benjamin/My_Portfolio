@@ -17,7 +17,7 @@ window.onscroll = () => {
 const projectDetails = [
   {
     idd: 0,
-    seeProjectBtn: 0,   
+    seeProjectBtn: 0,
     Pname: 'Todo-List App',
     description1: '"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
     description2: 'To Do List is a simple web page that displays a list of To Do tasks. It is built using HTML, CSS and JS and served by a Webpack dev server.',
